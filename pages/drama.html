@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drama</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    </head>
+    <body>
+        <section class="drama-scene">
+
+            <h1>Drama Museum</h1>
+
+            <img
+                id="cupboard1"
+                class="cupboard cupboard1"
+                src="../assets/minigame_objects/cupboard.png">
+
+            <img
+                id="cupboard2"
+                class="cupboard cupboard2"
+                src="../assets/minigame_objects/cupboard.png">
+
+            <img
+                id="cupboard3"
+                class="cupboard cupboard3"
+                src="../assets/minigame_objects/cupboard.png">
+
+            <img
+                id="cupboard4"
+                class="cupboard cupboard4"
+                src="../assets/minigame_objects/cupboard.png">
+
+            <div id="overlay" class="overlay hidden">
+
+                <div id="dramaCard" class="drama-card">
+
+                    <!-- <img
+                        class="paper-image"
+                        src="../assets/ui/papernote.png"> -->
+
+                    <div class="drama-paper-text">
+
+                        <img
+                            class="drama-photo"
+                            src="../assets/photos/happinessphoto.png">
+
+                        <h2>Guess the Drama</h2>
+                        <div class="answer-row">
+                            <input
+                            id="answer"
+                            type="text"
+                            placeholder="Type your answer">
+
+                            <button
+                                id="submitAnswer"
+                                class="submit-button">
+
+                                Submit
+
+                            </button>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+                <div id="correctCard" class="drama-card hidden">
+
+                    <h2>✨ Correct! ✨</h2>
+
+                    <p>
+
+                        Here's <b>Happiness</b> for you.
+                        <br><br>
+                        I hope it makes your day a little brighter.
+
+                    </p>
+
+                    <button id="closeMusic" class="submit-button">
+
+                        Close
+
+                    </button>
+
+                </div>
+
+
+            </div>
+        </section>
+        <audio
+            id="happyMusic"
+            src="../assets/music/happiness.mpeg">
+        </audio>
+
+        
+        <script src="../drama.js"></script>
+        
+
+    </body>

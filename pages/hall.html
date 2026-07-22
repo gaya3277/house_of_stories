@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hall</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    </head>
+    <body>
+
+    <section class="hall-scene">
+
+        <img class="hall-background"
+            src="../assets/backgrounds/hall.png">
+
+        <img
+        class="hall-girl"
+        src="../assets/characters/girl1.png">
+
+        <img
+        class="hall-cat"
+        src="../assets/characters/cat_lookingup.png">
+
+        <img
+        id="window"
+        class="window"
+        src="../assets/objects/window.png">
+        <img
+        class="bookshelf" id="bookshelf"
+        src="../assets/objects/bookshelf.png">
+        <img
+        class="plant"
+        src="../assets/objects/plant.png">
+        <img
+        class="radio"
+        src="../assets/objects/radio.png">
+        <img
+        class="teddy"
+        src="../assets/objects/teddy.png">
+        <img
+        class="cake" id="cake"
+        src="../assets/objects/cake_off.png">
+
+        <div id="overlay" class="overlay hidden">
+
+        <div id="paperNote" class="paper-note">
+
+            <img
+                class="paper-image"
+                src="../assets/ui/papernote.png">
+
+            <div class="paper-text">
+
+                <h2>The Future</h2>
+
+                <p>
+                    The pages we haven't turned yet...
+                    <br><br>
+                    <br><br>
+                    Some stories are still waiting
+                    to be written.
+                </p>
+
+                <button id="closeNote" class="main-button">
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+        <div id="booksMenu" class="books-menu hidden">
+
+            <div class="letters-menu">
+
+                <button id="letter1">Letter 1</button>
+                <button id="letter2">Letter 2</button>
+
+            </div>
+
+            <img
+                class="books-image"
+                src="../assets/objects/books.png">
+
+        </div>
+        <div id="letterNote" class="paper-note hidden">
+
+            <img
+                class="paper-image"
+                src="../assets/ui/papernote.png">
+
+            <div class="paper-text">
+
+                <h2 id="letterTitle"></h2>
+
+                <p id="letterContent"></p>
+
+                <button
+                    id="closeLetter"
+                    class="main-button">
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+        <div id="radioNote" class="paper-note hidden">
+
+            <img
+                class="paper-image"
+                src="../assets/ui/papernote.png">
+
+            <div class="paper-text">
+
+                <!-- <h2></h2> -->
+
+                <p>
+
+                    Don't forget
+                    <br><br>
+                    <br><br>
+                    to be happy.
+
+                </p>
+
+                <button
+                    id="playMusic"
+                    class="main-button">
+
+                    Continue
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+
+        <audio
+            id="happyMusic"
+            src="../assets/music/happiness.mpeg">
+        </audio>
+        <div class="room-menu">
+
+            <button id="dramaRoom">➜ Drama</button>
+
+            <button id="starsRoom">➜ Stars</button>
+
+            <button id="roofRoom">➜ Rooftop</button>
+
+        </div>
+        
+
+    </section>
+    <script src="../hall.js?v=1"></script>
+    </body>
+</html>
