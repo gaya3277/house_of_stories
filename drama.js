@@ -23,6 +23,18 @@ let currentDrama = 1;
 
 // Keeps track of solved dramas
 let completedDramas = [];
+let visitedMuseum = false;
+
+function showHallButton(){
+
+    visitedMuseum = true;
+
+    document
+        .getElementById("backHall")
+        .classList
+        .remove("hidden");
+
+}
 
 
 
@@ -31,7 +43,7 @@ let completedDramas = [];
 // ------------------------
 
 cupboard1.addEventListener("click", function(){
-
+    showHallButton();
     currentDrama = 1;
 
     dramaPhoto.src = "../assets/photos/happinessphoto.png";
@@ -47,7 +59,7 @@ cupboard1.addEventListener("click", function(){
 // ------------------------
 
 cupboard2.addEventListener("click", function(){
-
+    showHallButton();
     currentDrama = 2;
 
     dramaPhoto.src = "../assets/photos/immarriedbut.png";
@@ -63,7 +75,7 @@ cupboard2.addEventListener("click", function(){
 // ------------------------
 
 cupboard3.addEventListener("click", function(){
-
+    showHallButton();
     currentDrama = 3;
 
     dramaPhoto.src = "../assets/photos/flowerofevil.png";
@@ -79,7 +91,7 @@ cupboard3.addEventListener("click", function(){
 // ------------------------
 
 cupboard4.addEventListener("click", function(){
-
+    showHallButton();
     currentDrama = 4;
 
     dramaPhoto.src = "../assets/photos/reply1988.png";
@@ -243,5 +255,45 @@ closeMusic.addEventListener("click", function(){
         window.location.href = "../pages/hall.html";
 
     }
+
+});
+
+overlay.addEventListener("click", function(event){
+
+    if(event.target === overlay){
+
+        overlay.classList.add("hidden");
+
+        dramaCard.classList.remove("hidden");
+
+        correctCard.classList.add("hidden");
+
+        answerBox.value="";
+
+        music.pause();
+
+        music.currentTime=0;
+
+    }
+
+});
+
+dramaCard.addEventListener("click",function(event){
+
+    event.stopPropagation();
+
+});
+
+correctCard.addEventListener("click",function(event){
+
+    event.stopPropagation();
+
+});
+const backHall =
+document.getElementById("backHall");
+
+backHall.addEventListener("click",function(){
+
+    window.location.href="hall.html";
 
 });
