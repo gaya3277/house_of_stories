@@ -319,6 +319,8 @@ body{
 
     object-fit:cover;
 
+    z-index:0;
+
 }
 .hall-girl{
 
@@ -330,6 +332,8 @@ body{
 
     left:35%;
 
+    z-index:20;
+
 }
 .hall-cat{
 
@@ -340,6 +344,8 @@ body{
     bottom:70px;
 
     left:52%;
+
+    z-index:20;
 
 }
 .window{
@@ -390,7 +396,32 @@ body{
 
     bottom:160px;
 
+    z-index:10;
+
 }
+.window{
+    z-index:10;
+}
+
+.bookshelf{
+    z-index:10;
+}
+
+.plant{
+    z-index:10;
+}
+
+.teddy{
+    z-index:10;
+}
+
+.cake{
+    z-index:10;
+}
+
+
+
+
 .teddy{
 
     position:absolute;
